@@ -1,6 +1,6 @@
 ---
 name: Technitium DNS Server
-version: dev
+version: v0.1.0
 slug: technitium-dns
 description: Self-hosted DNS server with Home Assistant add-on integration.
 url: https://github.com/staerk-ha-addons/addon-technitium-dns
@@ -28,4 +28,4 @@ ports_description:
   853/tcp: DNS-over-TLS (853/tcp)
   443/udp: DNS-over-HTTPS (443/udp => HTTP/3)
   443/tcp: DNS-over-HTTPS (443/tcp => HTTP/1.1 + HTTP/2)
-image: ghcr.io/staerk-ha-addons/addon-technitium-dns/{arch}
+image: ghcr.io/staerk-ha-addons/technitium-dns/{arch}
