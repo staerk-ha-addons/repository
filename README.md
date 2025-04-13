@@ -35,6 +35,16 @@ Got questions?
 - Create an issue on GitHub for bug reports, feature requests, or questions
 - Add a ⭐️ [star on GitHub](https://github.com/staerk-ha-addons/repository) to support the project
 
+## Acknowledgments
+
+Special thanks to [Franck Nijhof][frenck] and the [Home Assistant Community Add-ons][ha-addons] project for their invaluable work. This add-on heavily relies on their foundation:
+
+- Base container images
+- CI, workflows and best practices
+- Readme and docs templates
+
+Their open-source contributions make add-ons like this possible.
+
 ## License
 
 MIT License - Copyright (c) 2025 Jeppe Stærk
