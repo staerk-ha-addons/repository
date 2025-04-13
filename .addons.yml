@@ -1,5 +1,5 @@
 ---
-channel: edge
+channel: stable
 addons:
   technitium-dns:
     repository: staerk-ha-addons/addon-technitium-dns

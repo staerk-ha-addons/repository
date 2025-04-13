@@ -8,6 +8,6 @@ on:
 
 jobs:
   workflows:
-    uses: staerk-ha-addons/workflows/.github/workflows/repository-updater.yaml@main
+    uses: hassio-addons/workflows/.github/workflows/repository-updater.yaml@main
     secrets:
       UPDATER_TOKEN: ${{ secrets.UPDATER_TOKEN }}
