@@ -2,6 +2,7 @@
 
 [![License][license-shield]][license]
 
+
 ## About
 
 Home Assistant add-ons repository by Jeppe Stærk. These add-ons extend the functionality of your Home Assistant installation.
@@ -10,7 +11,7 @@ Home Assistant add-ons repository by Jeppe Stærk. These add-ons extend the func
 
 Click the button below to add this repository to your Home Assistant instance:
 
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fstaerk-ha-addons%2Frepository)
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/staerk-ha-addons/repository)
 
 Or use the following URL to add this repository:
 
@@ -20,13 +21,19 @@ https://github.com/staerk-ha-addons/repository
 
 ## Add-ons
 
-### ✨ [Technitium DNS Server](./technitium-dns)
+### &#10003; [Technitium DNS Server][addon-technitium-dns]
 
-![Latest Version][technitium-version-shield]
-![Supports aarch64 Architecture][aarch64-shield]
-![Supports amd64 Architecture][amd64-shield]
+![Latest Version][technitium-dns-version-shield]
+![Supports armhf Architecture][technitium-dns-armhf-shield]
+![Supports armv7 Architecture][technitium-dns-armv7-shield]
+![Supports aarch64 Architecture][technitium-dns-aarch64-shield]
+![Supports amd64 Architecture][technitium-dns-amd64-shield]
+![Supports i386 Architecture][technitium-dns-i386-shield]
 
-A powerful and flexible DNS server for Home Assistant with advanced features like DNS-over-HTTPS, DNS-over-TLS, and DNS blocking.
+Self-hosted DNS server with Home Assistant add-on integration.
+
+[:books: Technitium DNS Server add-on documentation][addon-doc-technitium-dns]
+
 
 ## Support
 
@@ -49,8 +56,16 @@ Their open-source contributions make add-ons like this possible.
 
 MIT License - Copyright (c) 2025 Jeppe Stærk
 
-[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
-[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[addon-technitium-dns]: https://github.com/staerk-ha-addons/addon-technitium-dns/tree/v0.1.0
+[addon-doc-technitium-dns]: https://github.com/staerk-ha-addons/addon-technitium-dns/blob/v0.1.0/README.md
+[technitium-dns-issue]: https://github.com/staerk-ha-addons/addon-technitium-dns/issues
+[technitium-dns-version-shield]: https://img.shields.io/badge/version-v0.1.0-blue.svg
+[technitium-dns-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[technitium-dns-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[technitium-dns-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[technitium-dns-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[technitium-dns-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+[frenck]: https://github.com/frenck
+[ha-addons]: https://addons.community/
 [license]: https://github.com/staerk-ha-addons/repository/blob/main/LICENSE
 [license-shield]: https://img.shields.io/github/license/staerk-ha-addons/repository.svg
-[technitium-version-shield]: https://img.shields.io/badge/version-v0.1.0-blue.svg
