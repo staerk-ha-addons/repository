@@ -1,6 +1,5 @@
----
 name: Technitium DNS Server
-version: 0.1.0
+version: 0.2.1
 slug: technitium-dns
 description: Self-hosted DNS server with Home Assistant add-on integration.
 url: https://github.com/staerk-ha-addons/addon-technitium-dns
@@ -10,22 +9,42 @@ panel_icon: mdi:dns
 startup: services
 init: false
 arch:
-  - amd64
-  - aarch64
+- amd64
+- aarch64
 map:
-  - type: ssl
-  - type: addon_config
-    read_only: False
+- type: ssl
+- type: addon_config
+  read_only: false
+options:
+  forwarders: Cloudflare (DNS-over-HTTPS)
+  logQueries: true
+  enableDnsOverTls: true
+  enableDnsOverHttps: true
+  enableDnsOverQuic: false
+  certfile: /ssl/fullchain.pem
+  keyfile: /ssl/privkey.key
+  manualConfig: false
+  manualCertHandling: false
+schema:
+  forwarders: "list(\n  Cloudflare (DNS-over-UDP)|\n  Cloudflare (DNS-over-UDP IPv6)|\n\
+    \  Cloudflare (DNS-over-TCP)|\n  Cloudflare (DNS-over-TCP IPv6)|\n  Cloudflare\
+    \ (DNS-over-TLS)|\n  Cloudflare (DNS-over-TLS IPv6)|\n  Cloudflare (DNS-over-HTTPS)|\n\
+    \  Cloudflare (DNS-over-HTTPS IPv6)|\n  Cloudflare (Oblivious DNS-over-HTTPS)|\n\
+    \  Cloudflare (Oblivious DNS-over-HTTPS IPv6)\n)"
+  logQueries: bool
+  enableDnsOverTls: bool
+  enableDnsOverHttps: bool
+  enableDnsOverQuic: bool
+  keyfile: str?
+  certfile: str?
+  manualConfig: bool
+  manualCertHandling: bool
 ports:
   53/udp: 53
-  853/udp: null
-  853/tcp: null
-  443/udp: null
-  443/tcp: null
-ports_description:
-  53/udp: Standard DNS service (53/udp)
-  853/udp: DNS-over-QUIC (853/udp)
-  853/tcp: DNS-over-TLS (853/tcp)
-  443/udp: DNS-over-HTTPS (443/udp => HTTP/3)
-  443/tcp: DNS-over-HTTPS (443/tcp => HTTP/1.1 + HTTP/2)
+  443/tcp: 443
+  443/udp: 443
+  853/tcp: 853
+  853/udp: 853
+  5380/tcp: 5380
+  53443/tcp: 53443
 image: ghcr.io/staerk-ha-addons/technitium-dns/{arch}
