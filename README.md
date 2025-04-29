@@ -34,16 +34,13 @@ Self-hosted DNS server with Home Assistant add-on integration.
 
 [:books: Technitium DNS Server add-on documentation][addon-doc-technitium-dns]
 
+
 ## Support
 
 Got questions?
 
-- Create an issue on GitHub for bug reports, feature requests, or questions. Note, separate GitHub repository for each add-on.
+- Create an issue on GitHub for bug reports, feature requests, or questions
 - Add a ⭐️ [star on GitHub](https://github.com/staerk-ha-addons/repository) to support the project
-
-{% for addon in addons %}
-- [Open an issue for the add-on: {{ addon.name }}][{{ addon.target }}-issue]
-{% endfor %}
 
 ## Acknowledgments
 
@@ -59,10 +56,10 @@ Their open-source contributions make add-ons like this possible.
 
 MIT License - Copyright (c) 2025 Jeppe Stærk
 
-[addon-technitium-dns]: https://github.com/staerk-ha-addons/addon-technitium-dns/tree/v0.2.3
-[addon-doc-technitium-dns]: https://github.com/staerk-ha-addons/addon-technitium-dns/blob/v0.2.3/README.md
+[addon-technitium-dns]: https://github.com/staerk-ha-addons/addon-technitium-dns/tree/v0.0.1
+[addon-doc-technitium-dns]: https://github.com/staerk-ha-addons/addon-technitium-dns/blob/v0.0.1/README.md
 [technitium-dns-issue]: https://github.com/staerk-ha-addons/addon-technitium-dns/issues
-[technitium-dns-version-shield]: https://img.shields.io/badge/version-v0.2.3-blue.svg
+[technitium-dns-version-shield]: https://img.shields.io/badge/version-v0.0.1-blue.svg
 [technitium-dns-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [technitium-dns-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [technitium-dns-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
