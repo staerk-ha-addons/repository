@@ -18,9 +18,6 @@ A fully featured DNS server for Home Assistant that:
 
 - 🔒 Securely forwards DNS queries using DoH/DoT/DoQ
 - 🌐 Supports local DNS zones and custom domains
-- 🔄 Auto-configures with Home Assistant
-- 📋 Manages SSL certificates automatically
-- 🚀 Uses Cloudflare DNS with modern protocols
 - ⚡ Provides fast DNS caching
 - 🛡️ Includes DNS filtering and blocking
 
@@ -53,9 +50,21 @@ Want to get the most out of this add-on? Our comprehensive documentation covers:
 - Best practices
 - Local DNS hosting
 - Troubleshooting
-- Client setup examples
 
 Check the [:books: DOCS.md][docs] for full details.
+
+## DNS Flow and Protocol Options
+
+> This diagram illustrates how DNS queries flow through your network, showing both unencrypted (🔓) and encrypted (🔐) paths. Local devices can use either standard DNS or secure protocols (DoH/DoT/DoQ) to query the Technitium DNS Server, which then forwards requests to Cloudflare using selected dns_forwarders.
+
+![DNS flow diagram][dns-diagram]
+
+### Key Points
+
+- 🏡 **Local Network**: Devices and router can use any supported protocol
+- 🔒 **Security Options**: Choose between standard DNS or encrypted protocols
+- 🌐 **Flexible Forwarding**: All protocols supported for external queries
+- ⚡ **Modern Standards**: Full support for DoH, DoT, and DoQ
 
 ## 💡 Support
 
@@ -93,10 +102,9 @@ This is a third-party add-on for Home Assistant and not an official add-on. It i
 
 ## 📄 License
 
-MIT License
+MIT License - Copyright (c) 2025 Jeppe Stærk
 
-Copyright (c) 2025 Jeppe Stærk
-
+[dns-diagram]: https://raw.githubusercontent.com/staerk-ha-addons/addon-technitium-dns/refs/heads/main/images/flowchart-dns.svg
 [docs]: https://github.com/staerk-ha-addons/addon-technitium-dns/blob/main/technitium-dns/DOCS.md
 [frenck]: https://github.com/frenck
 [issue]: https://github.com/staerk-ha-addons/addon-technitium-dns/issues

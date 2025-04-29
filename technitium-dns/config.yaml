@@ -1,5 +1,5 @@
 name: Technitium DNS Server
-version: 0.0.1
+version: 0.0.2
 slug: technitium-dns
 description: Self-hosted DNS server with Home Assistant add-on integration.
 url: https://github.com/staerk-ha-addons/addon-technitium-dns
@@ -15,35 +15,13 @@ map:
 - type: ssl
 - type: addon_config
   read_only: false
-options:
-  forwarders: Cloudflare (DNS-over-HTTPS)
-  logQueries: true
-  enableDnsOverTls: true
-  enableDnsOverHttps: true
-  enableDnsOverQuic: false
-  certfile: /ssl/fullchain.pem
-  keyfile: /ssl/privkey.key
-  manualConfig: false
-  manualCertHandling: false
-schema:
-  forwarders: list(Cloudflare (DNS-over-UDP)|Cloudflare (DNS-over-UDP IPv6)|Cloudflare
-    (DNS-over-TCP)|Cloudflare (DNS-over-TCP IPv6)|Cloudflare (DNS-over-TLS)|Cloudflare
-    (DNS-over-TLS IPv6)|Cloudflare (DNS-over-HTTPS)|Cloudflare (DNS-over-HTTPS IPv6)|Cloudflare
-    (Oblivious DNS-over-HTTPS)|Cloudflare (Oblivious DNS-over-HTTPS IPv6))
-  logQueries: bool
-  enableDnsOverTls: bool
-  enableDnsOverHttps: bool
-  enableDnsOverQuic: bool
-  keyfile: str?
-  certfile: str?
-  manualConfig: bool
-  manualCertHandling: bool
 ports:
+  53/tcp: null
   53/udp: 53
-  443/tcp: 443
-  443/udp: 443
-  853/tcp: 853
-  853/udp: 853
-  5380/tcp: 5380
-  53443/tcp: 53443
+  443/tcp: null
+  443/udp: null
+  853/tcp: null
+  853/udp: null
+  5380/tcp: null
+  53443/tcp: null
 image: ghcr.io/staerk-ha-addons/technitium-dns/{arch}
