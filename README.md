@@ -34,13 +34,16 @@ Self-hosted DNS server with Home Assistant add-on integration.
 
 [:books: Technitium DNS Server add-on documentation][addon-doc-technitium-dns]
 
-
 ## Support
 
 Got questions?
 
-- Create an issue on GitHub for bug reports, feature requests, or questions
+- Create an issue on GitHub for bug reports, feature requests, or questions. Note, separate GitHub repository for each add-on.
 - Add a ⭐️ [star on GitHub](https://github.com/staerk-ha-addons/repository) to support the project
+
+{% for addon in addons %}
+- [Open an issue for the add-on: {{ addon.name }}][{{ addon.target }}-issue]
+{% endfor %}
 
 ## Acknowledgments
 
