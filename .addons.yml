@@ -5,3 +5,7 @@ addons:
     repository: staerk-ha-addons/addon-technitium-dns
     target: technitium-dns
     image: ghcr.io/staerk-ha-addons/technitium-dns/{arch}
+  technitium-dns-host:
+    repository: staerk-ha-addons/addon-technitium-dns-host
+    target: technitium-dns
+    image: ghcr.io/staerk-ha-addons/technitium-dns-host/{arch}
