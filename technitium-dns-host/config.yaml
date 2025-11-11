@@ -1,0 +1,29 @@
+name: Technitium DNS Server (Host Network)
+version: 1.14.1
+slug: technitium-dns-host
+description: Self-hosted DNS server with Home Assistant add-on integration (Host Network
+  mode enabled).
+url: https://github.com/staerk-ha-addons/addon-technitium-dns-host
+ingress: true
+ingress_port: 5380
+panel_icon: mdi:dns
+startup: services
+init: false
+arch:
+- amd64
+- aarch64
+map:
+- type: ssl
+- type: addon_config
+  read_only: false
+host_network: true
+ports:
+  53/tcp: null
+  53/udp: 53
+  443/tcp: null
+  443/udp: null
+  853/tcp: null
+  853/udp: null
+  5380/tcp: null
+  53443/tcp: null
+image: ghcr.io/staerk-ha-addons/technitium-dns-host/{arch}

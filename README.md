@@ -34,6 +34,19 @@ Self-hosted DNS server with Home Assistant add-on integration.
 
 [:books: Technitium DNS Server add-on documentation][addon-doc-technitium-dns]
 
+### &#10003; [Technitium DNS Server (Host Network)][addon-technitium-dns-host]
+
+![Latest Version][technitium-dns-host-version-shield]
+![Supports armhf Architecture][technitium-dns-host-armhf-shield]
+![Supports armv7 Architecture][technitium-dns-host-armv7-shield]
+![Supports aarch64 Architecture][technitium-dns-host-aarch64-shield]
+![Supports amd64 Architecture][technitium-dns-host-amd64-shield]
+![Supports i386 Architecture][technitium-dns-host-i386-shield]
+
+Self-hosted DNS server with Home Assistant add-on integration (Host Network mode enabled).
+
+[:books: Technitium DNS Server (Host Network) add-on documentation][addon-doc-technitium-dns-host]
+
 
 ## Support
 
@@ -65,6 +78,15 @@ MIT License - Copyright (c) 2025 Jeppe Stærk
 [technitium-dns-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [technitium-dns-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
 [technitium-dns-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
+[addon-technitium-dns-host]: https://github.com/staerk-ha-addons/addon-technitium-dns-host/tree/v1.14.1
+[addon-doc-technitium-dns-host]: https://github.com/staerk-ha-addons/addon-technitium-dns-host/blob/v1.14.1/README.md
+[technitium-dns-host-issue]: https://github.com/staerk-ha-addons/addon-technitium-dns-host/issues
+[technitium-dns-host-version-shield]: https://img.shields.io/badge/version-v1.14.1-blue.svg
+[technitium-dns-host-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[technitium-dns-host-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[technitium-dns-host-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[technitium-dns-host-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[technitium-dns-host-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [frenck]: https://github.com/frenck
 [ha-addons]: https://addons.community/
 [license]: https://github.com/staerk-ha-addons/repository/blob/main/LICENSE
