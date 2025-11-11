@@ -1,5 +1,2 @@
-## What’s changed
-
-## ⬆️ Dependency updates
-
-- ⬆️ Update base image, Dotnet and DNS server versions @jeppestaerk (#13)
+## What's Changed
+**Full Changelog**: https://github.com/staerk-ha-addons/addon-technitium-dns/compare/v0.0.4...v1.14.1
