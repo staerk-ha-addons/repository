@@ -1,1 +1,0 @@
-**Full Changelog**: https://github.com/staerk-ha-addons/addon-technitium-dns-host/compare/v1.14.1
