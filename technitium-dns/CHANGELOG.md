@@ -1,14 +1,14 @@
-  ## ⚠️ Important
-
-  - Add-on now uses **host networking** mode for proper DNS functionality. Ensure port 53 is available on your host.
-
 ## What’s changed
+
+## 🐛 Bug fixes
+
+- 🐛 Build Technitium v15 with .NET 10 SDK/runtime @jeppestaerk (#38)
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9 @[renovate[bot]](https://github.com/apps/renovate) (#16)
-- ⬆️ Update DNS_SERVER_VERSION to v14.1.0 @[renovate[bot]](https://github.com/apps/renovate) (#18)
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.1.0 @[renovate[bot]](https://github.com/apps/renovate) (#19)
-- ⬆️ Update DNS_SERVER_VERSION to v14.2.0 @[renovate[bot]](https://github.com/apps/renovate) (#20)
-- ⬆️ Update DNS_SERVER_VERSION to v14.3.0 @[renovate[bot]](https://github.com/apps/renovate) (#22)
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.2.0 @[renovate[bot]](https://github.com/apps/renovate) (#24)
+- ⬆️ Update actions/checkout action to v6 @[renovate[bot]](https://github.com/apps/renovate) (#25)
+- ⬆️ Update ghcr.io/home-assistant/devcontainer Docker tag to v3 @[renovate[bot]](https://github.com/apps/renovate) (#27)
+- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.3.0 @[renovate[bot]](https://github.com/apps/renovate) (#29)
+- ⬆️ Update DNS_SERVER_VERSION to v15 @[renovate[bot]](https://github.com/apps/renovate) (#30)
+- ⬆️ Update DNS_SERVER_VERSION to v15.0.1 @[renovate[bot]](https://github.com/apps/renovate) (#32)
+- ⬆️ Update DNS_SERVER_VERSION to v15.1.0 @[renovate[bot]](https://github.com/apps/renovate) (#33)
