@@ -1,14 +1,10 @@
-## What’s changed
+First add-on release on the new **CalVer** scheme (`YYYY.M.PATCH`), decoupled from the upstream Technitium version so add-on-only fixes can ship. Bundles **Technitium DNS Server 15.3.0**.
 
-## 🐛 Bug fixes
+### 🐛 Fixes
+- **Ingress web UI now works with host networking.** The panel previously showed *"refused to connect"*; host-network add-ons need a dynamic ingress port, which wasn't set. Added an nginx reverse proxy on the Supervisor-assigned port → Technitium on 5380. Direct access at `http://<host>:5380` still works. Verified end-to-end in a HA Supervisor. (#42)
 
-- 🐛 Build Technitium v15 with .NET 10 SDK/runtime @jeppestaerk (#38)
+### 👷 Maintenance
+- Hardened auto-release (SHA-pinned checkout, `make_latest`, release token) (#39)
+- Reliable Renovate auto-upgrades; single bot, SHA-pinned actions (#40, #43)
 
-## ⬆️ Dependency updates
-
-- ⬆️ Update actions/checkout action to v6 @[renovate[bot]](https://github.com/apps/renovate) (#25)
-- ⬆️ Update ghcr.io/home-assistant/devcontainer Docker tag to v3 @[renovate[bot]](https://github.com/apps/renovate) (#27)
-- ⬆️ Update ghcr.io/hassio-addons/debian-base Docker tag to v9.3.0 @[renovate[bot]](https://github.com/apps/renovate) (#29)
-- ⬆️ Update DNS_SERVER_VERSION to v15 @[renovate[bot]](https://github.com/apps/renovate) (#30)
-- ⬆️ Update DNS_SERVER_VERSION to v15.0.1 @[renovate[bot]](https://github.com/apps/renovate) (#32)
-- ⬆️ Update DNS_SERVER_VERSION to v15.1.0 @[renovate[bot]](https://github.com/apps/renovate) (#33)
+> Note: the add-on version is now date-based; the Technitium version is shown in the Technitium console. This avoids version-scheme conflicts with upstream.
