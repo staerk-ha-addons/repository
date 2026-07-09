@@ -1,9 +1,7 @@
 ## What’s changed
 
-## 🐛 Bug fixes
-
-- 🐛 Strip frame-blocking headers so Ingress can embed the console @jeppestaerk (#45)
-
 ## 🧰 Maintenance
 
-- 👷 Switch auto-release to CalVer (decoupled from Technitium version) @jeppestaerk (#44)
+- 👷 Set release as latest in a separate call @jeppestaerk (#47)
+- 🙈 Untrack .claude/settings.local.json and gitignore .claude/ @jeppestaerk (#48)
+- 🔥 Remove legacy port mappings (inert under host_network) @jeppestaerk (#50)
