@@ -2,4 +2,4 @@
 
 ## ⬆️ Dependency updates
 
-- ⬆️ Update DNS_SERVER_VERSION to v15.6.0 @[renovate[bot]](https://github.com/apps/renovate) (#79)
+- ⬆️ Update DNS_SERVER_VERSION to v15.6.1 @[renovate[bot]](https://github.com/apps/renovate) (#80)
